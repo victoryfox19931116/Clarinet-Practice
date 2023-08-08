@@ -1,0 +1,19 @@
+[project]
+authors = []
+cache_dir = '.\.cache'
+description = ''
+name = 'counter'
+requirements = []
+telemetry = true
+[contracts.counter]
+clarity_version = 2
+epoch = 2.4
+path = 'contracts/counter.clar'
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+callee_filter = false
+strict = false
+trusted_caller = false
+trusted_sender = false
